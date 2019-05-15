@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.thread;
+package com.ptsiogas.firemessenger.thread;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -23,8 +23,8 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.util.ArrayList;
 
-import afterapps.com.firebaseim.R;
-import afterapps.com.firebaseim.beans.Message;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.beans.Message;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

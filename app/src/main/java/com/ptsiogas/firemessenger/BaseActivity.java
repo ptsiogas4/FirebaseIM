@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim;
+package com.ptsiogas.firemessenger;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

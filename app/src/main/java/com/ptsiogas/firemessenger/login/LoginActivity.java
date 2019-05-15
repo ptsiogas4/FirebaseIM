@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.login;
+package com.ptsiogas.firemessenger.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,8 +25,8 @@ import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.io.IOException;
 
-import afterapps.com.firebaseim.R;
-import afterapps.com.firebaseim.home.MainActivity;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.home.MainActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

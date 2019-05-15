@@ -1,9 +1,10 @@
-package afterapps.com.firebaseim;
+package com.ptsiogas.firemessenger;
 
 /*
  * Created by Mahmoud on 3/13/2017.
  */
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Application extends android.app.Application {

@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.thread;
+package com.ptsiogas.firemessenger.thread;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,13 +28,13 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Calendar;
 import java.util.Date;
 
-import afterapps.com.firebaseim.BaseActivity;
-import afterapps.com.firebaseim.Constants;
-import afterapps.com.firebaseim.R;
-import afterapps.com.firebaseim.beans.Message;
-import afterapps.com.firebaseim.beans.User;
-import afterapps.com.firebaseim.login.LoginActivity;
-import afterapps.com.firebaseim.widgets.EmptyStateRecyclerView;
+import com.ptsiogas.firemessenger.BaseActivity;
+import com.ptsiogas.firemessenger.Constants;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.beans.Message;
+import com.ptsiogas.firemessenger.beans.User;
+import com.ptsiogas.firemessenger.login.LoginActivity;
+import com.ptsiogas.firemessenger.widgets.EmptyStateRecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

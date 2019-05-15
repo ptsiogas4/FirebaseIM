@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="afterapps.com.firebaseim">
+    package="com.ptsiogas.firemessenger">
 
     <application
-        android:name=".Application"
+        android:name="com.ptsiogas.firemessenger.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,18 +12,18 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name=".login.LoginActivity" />
+        <activity android:name="com.ptsiogas.firemessenger.login.LoginActivity" />
 
         <activity
-            android:name=".home.MainActivity"
+            android:name="com.ptsiogas.firemessenger.home.MainActivity"
             android:launchMode="singleTop" />
 
         <activity
-            android:name=".thread.ThreadActivity"
+            android:name="com.ptsiogas.firemessenger.thread.ThreadActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name=".login.SplashActivity"
+            android:name="com.ptsiogas.firemessenger.login.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
         </activity>
 
         <service
-            android:name=".fcm.InstanceIdService"
+            android:name="com.ptsiogas.firemessenger.fcm.InstanceIdService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -41,7 +41,7 @@
         </service>
 
         <service
-            android:name=".fcm.MessagingService"
+            android:name="com.ptsiogas.firemessenger.fcm.MessagingService"
             tools:ignore="ExportedService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

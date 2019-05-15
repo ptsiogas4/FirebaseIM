@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="afterapps.com.firebaseim.thread.ThreadActivity">
+    tools:context="com.ptsiogas.firemessenger.thread.ThreadActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             android:gravity="center"
             android:text="@string/empty_view_thread" />
 
-        <afterapps.com.firebaseim.widgets.EmptyStateRecyclerView
+        <com.ptsiogas.firemessenger.widgets.EmptyStateRecyclerView
             android:id="@+id/activity_thread_messages_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.home;
+package com.ptsiogas.firemessenger.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,12 +19,12 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import afterapps.com.firebaseim.Constants;
-import afterapps.com.firebaseim.R;
-import afterapps.com.firebaseim.beans.User;
-import afterapps.com.firebaseim.login.LoginActivity;
-import afterapps.com.firebaseim.thread.ThreadActivity;
-import afterapps.com.firebaseim.widgets.EmptyStateRecyclerView;
+import com.ptsiogas.firemessenger.Constants;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.beans.User;
+import com.ptsiogas.firemessenger.login.LoginActivity;
+import com.ptsiogas.firemessenger.thread.ThreadActivity;
+import com.ptsiogas.firemessenger.widgets.EmptyStateRecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

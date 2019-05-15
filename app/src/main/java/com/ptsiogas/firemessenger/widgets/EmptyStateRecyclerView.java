@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.widgets;
+package com.ptsiogas.firemessenger.widgets;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

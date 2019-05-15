@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.home;
+package com.ptsiogas.firemessenger.home;
 
 import android.content.Context;
 import android.support.v7.widget.CardView;
@@ -15,8 +15,8 @@ import com.google.firebase.database.Query;
 
 import org.greenrobot.eventbus.EventBus;
 
-import afterapps.com.firebaseim.R;
-import afterapps.com.firebaseim.beans.User;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.beans.User;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
@@ -83,6 +83,9 @@ class UsersAdapter extends FirebaseRecyclerAdapter<User, UsersAdapter.UserViewHo
                     .dontAnimate()
                     .bitmapTransform(new CropCircleTransformation(context))
                     .into(itemUserImageView);
+
+//            Glide.with(co
+// itemUserImageView);
         }
     }
 }

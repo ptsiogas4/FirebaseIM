@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.beans;
+package com.ptsiogas.firemessenger.beans;
 
 /*
  * Created by Mahmoud on 3/13/2017.

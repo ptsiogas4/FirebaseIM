@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="afterapps.com.firebaseim.home.MainActivity">
+    tools:context="com.ptsiogas.firemessenger.home.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <afterapps.com.firebaseim.widgets.EmptyStateRecyclerView
+    <com.ptsiogas.firemessenger.widgets.EmptyStateRecyclerView
         android:id="@+id/activity_main_users_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

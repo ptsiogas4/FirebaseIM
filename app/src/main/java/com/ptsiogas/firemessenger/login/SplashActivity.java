@@ -1,4 +1,4 @@
-package afterapps.com.firebaseim.login;
+package com.ptsiogas.firemessenger.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.util.Log;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import afterapps.com.firebaseim.home.MainActivity;
+import com.ptsiogas.firemessenger.home.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
