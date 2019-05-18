@@ -34,7 +34,7 @@
         android:paddingEnd="@dimen/simple_padding_large"
         android:paddingStart="@dimen/simple_padding_large"
         android:text="@string/placeholder"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorMessageTextPrimary"
         android:textSize="@dimen/text_size_secondary" />
 
 </LinearLayout>

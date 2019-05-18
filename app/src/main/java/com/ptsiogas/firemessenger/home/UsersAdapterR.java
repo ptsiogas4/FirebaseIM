@@ -1,6 +1,7 @@
 package com.ptsiogas.firemessenger.home;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,44 +11,66 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.Query;
+import com.ptsiogas.firemessenger.R;
+import com.ptsiogas.firemessenger.beans.User;
 
 import org.greenrobot.eventbus.EventBus;
 
-import com.ptsiogas.firemessenger.R;
-import com.ptsiogas.firemessenger.beans.User;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.wasabeef.glide.transformations.CropCircleTransformation;
 
-/*
- * Created by Mahmoud on 3/13/2017.
- */
+public class UsersAdapterR extends RecyclerView.Adapter<UsersAdapterR.UserViewHolder> {
 
-class UsersAdapter extends FirebaseRecyclerAdapter<User, UsersAdapter.UserViewHolder> {
+    interface UsersAdapterRListener {
+        void onClick(User user);
+    }
+
 
     private final Context context;
+    private ArrayList<User> mData = new ArrayList<>();
+    private UsersAdapterRListener mListener;
 
-    UsersAdapter(Context context, Query ref) {
-        super(User.class, R.layout.item_user, UserViewHolder.class, ref);
+    public UsersAdapterR(Context context, ArrayList<User> mData, UsersAdapterRListener mListener) {
         this.context = context;
+        this.mData = mData;
+        this.mListener = mListener;
     }
 
-    @Override
-    protected void populateViewHolder(UserViewHolder holder, User user, int position) {
-        holder.setUser(user);
+    public void update(ArrayList<User> data) {
+        mData = new ArrayList<>();
+        mData.addAll(data);
+        this.notifyDataSetChanged();
     }
 
+    @NonNull
     @Override
-    public UserViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_user, parent, false);
 
         return new UserViewHolder(itemView);
     }
 
+    @Override
+    public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+        User user = mData.get(position);
+        holder.position = position;
+        holder.setUser(user);
+    }
+
+    @Override
+    public int getItemCount() {
+        return mData.size();
+    }
+
     class UserViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        int position = 0;
         @BindView(R.id.item_user_image_view)
         ImageView itemUserImageView;
         @BindView(R.id.item_friend_name_text_view)
@@ -65,10 +88,9 @@ class UsersAdapter extends FirebaseRecyclerAdapter<User, UsersAdapter.UserViewHo
 
         @Override
         public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.item_user_parent:
-                    EventBus.getDefault().post(getRef(getLayoutPosition()));
-                    break;
+            User user = mData.get(position);
+            if (mListener != null) {
+                mListener.onClick(user);
             }
         }
 
@@ -84,4 +106,5 @@ class UsersAdapter extends FirebaseRecyclerAdapter<User, UsersAdapter.UserViewHo
                     .into(itemUserImageView);
         }
     }
+
 }

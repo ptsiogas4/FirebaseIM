@@ -3,12 +3,13 @@
     <!--system colors-->
     <color name="colorPrimary">#262626</color>
     <color name="colorPrimaryDark">#212121</color>
-    <color name="colorAccent">#edb537</color>
-    <color name="colorAccentPressed">#eaa60c</color>
-    <color name="colorAccentIcons">#edb537</color>
+    <color name="colorAccent">#f0f757</color>
+    <color name="colorAccentPressed">#e9d758</color>
+    <color name="colorAccentIcons">#f0f757</color>
 
     <!--text colors-->
     <color name="colorTextPrimary">#D9FFFFFF</color>
+    <color name="colorMessageTextPrimary">#546a7b</color>
     <color name="colorTextPrimaryHighlighted">#F2FFFFFF</color>
     <color name="colorTextSecondary">#8CFFFFFF</color>
 
